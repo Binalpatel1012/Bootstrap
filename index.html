@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>PortFolio Website</title>
+
+    <!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Font Awasome Link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <section>
+        <!--Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--Buttons link to relevant sections on the page.-->
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                            <li class="nav-item ">
+                                <a class ="nav-link me-lg-2" aria-current="page" href="#home">Home</a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class ="nav-link me-lg-2" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class ="nav-link me-lg-2" href="#education">Education</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class ="nav-link me-lg-2" href="#projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class ="nav-link me-lg-2" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+    <!-- Hero -->
+    <!--Home Section start Here-->
+    <header class="bg-info-subtle py-5 shadow" id="home">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-xl-6 col-xxl-6 col-lg-6 order-lg-2  mx-auto justify-content-center text-center">
+                    <img class="img-fluid border border-info border-5 rounded-circle my-5"src="images/profile.jpg" alt="" style="height: 90%; width: 90%;"">
+                </div>
+                <div class="col-xl-6 col-xxl-6 col-lg-6 order-lg-1 mx-auto">
+                    <div class="my-5 mb-4">
+                        <h2 class="text-center fw-bold mb-2">Hello! I'm Binal Patel,</h2>
+                        <h2 class="text-primary text-center fw-bold mb-2">Android developer</h2>
+                        <p class="lead text-secondary text-center mb-4">Hello! I'm Binal Patel, a Android Developer with a passion for creating intuitive and dynamic user experiences. 
+                            I'm dedicated to crafting responsive and accessible websites that meet the needs of clients and users alike. Welcome to my portfolio!
+                        </p>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-center">
+                            <a class="btn btn-primary btn-large text-uppercase fw-bold" onclick="window.open('./assets/Binal patel.pdf')">
+                                <i class="fas fa-download"></i>  download resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Hero End -->
+    <!--Home section end Here-->
+
+    <main> 
+        <!-- About -->
+        <section id="about" class="text-center py-5">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <h2 class="fw-bold mb-4">About</h2>
+                    <p class="lead text-muted mb-4">
+                        I am an aspiring Android developer learning to build elegant, fast, and scalable Android applications.
+                     </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-evenly">
+                    <div class="col-lg-3 bg-light shadow p-5">
+                        <div class="mb-5 about">
+                            <span class="m-auto text-primary"><i class="fa-solid fa-palette"></i></span>
+                        </div>
+                            <h5>Application Design</h5>
+                            <p class="text-muted mb-0">Creating user-friendly and aesthetically pleasing interfaces.</p>
+                    </div>
+                    <div class="col-lg-3 bg-info-subtle shadow p-5">
+                        <div class="mb-5 about">
+                            <span class="material-icons-outlined m-auto text-primary"><i class="fa-solid fa-code"></i></span>
+                        </div>
+                            <h5>Application Development</h5>
+                            <p class="text-muted mb-0">Writing clean, efficient, and maintainable code using languages like Kotlin.</p>
+                    </div>
+                    <div class="col-lg-3 bg-light shadow p-5">
+                        <div class="mb-5 about">
+                            <span class="material-icons-outlined m-auto text-primary"><i class="fa-solid fa-gear"></i></span>
+                        </div>
+                            <h5>Application Deployment</h5>
+                            <p class="text-muted mb-0">Packaging and preparing the application for release on the Google Play Store.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About End -->
+        <hr>
+            <!-- Education-->
+            <section id="education" class="text-center py-5">
+                <div class="container py-5">
+                    <div class="row justify-content-center">
+                        <h2 class="fw-bold mb-4">Education</h2>
+                        <p class="lead text-muted mb-4">
+                            Here are my Education List
+                         </p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingone">
+                                <button class="accordion-button bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseone" aria-expanded="true" aria-controls="panelsStayOpen-collapseone">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-6 text-center text-lg-start text-dark mb-3 mb-lg-0">
+                                                <b>Cambrian College</b><br>
+                                                <div class="text-primary">Mobile Application Development</div>
+                                                <i>2023 - 2024</i><br>                                            
+                                            </div>
+                                            <div class="col-lg-6 text-lg-end align-self-center text-dark d-none d-lg-block">
+                                                View Details
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseone" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingone">
+                                <div class="accordion-body text-start">
+                                    <p>Currently I m Studying at Cambrian College, Sudbury, Ontario. and My Course is Mobile Application Development.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingtwo">
+                                <button class="accordion-button bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsetwo" aria-expanded="true" aria-controls="panelsStayOpen-collapsetwo">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-6 text-center text-lg-start text-dark mb-3 mb-lg-0">
+                                                <b>Android Developer</b><br>
+                                                <div class="text-primary">Scalelot Company</div>
+                                                <i>2021 - 2023</i><br>
+                                            </div>
+                                            <div class="col-lg-6 text-lg-end align-self-center text-dark d-none d-lg-block">
+                                                View Details
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapsetwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingtwo">
+                                <div class="accordion-body text-start">
+                                    <p>I had Working at scalelot company in 2021 and I was Android Developer on that time.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingthree">
+                                <button class="accordion-button bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsethree" aria-expanded="true" aria-controls="panelsStayOpen-collapsethree">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-6 text-center text-lg-start text-dark mb-3 mb-lg-0">
+                                                <b>Bachelor Of Computer Application</b><br>
+                                                <div class="text-primary">Veer Narmad University</div>
+                                                <i>2018 - 2021</i><br>
+                                            </div>
+                                            <div class="col-lg-6 text-lg-end align-self-center text-dark d-none d-lg-block">
+                                                View Details
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapsethree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingthree">
+                                <div class="accordion-body text-start">
+                                    <p>Completed my Bachelor in Bachelor of computer application at Veer narmad University.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Education End-->
+            <hr>
+
+
+            <!-- Projects -->
+            <section id="projects" class="text-center py-5">
+                <div class="container py-5">
+                    <div class="row justify-content-center">
+                        <h2 class="fw-bold mb-4">Projects</h2>
+                        <p class="lead text-muted mb-4">
+                            Here are a few past projects I have worked on.
+                         </p>
+                    </div>
+                </div>
+                <div class="container mb-5">
+                    <div class="row">
+                        <div class="col-lg-6 mx-auto mb-5">
+                            <div class="card h-100 shadow border-0 bg-light">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title mb-2 text-dark">Make My Trip</h5>
+                                    <div class="mb-2">
+                                        <div class="badge bg-info rounded-pill">PHP</div>
+                                        <div class="badge bg-info rounded-pill">HTML</div>
+                                        <div class="badge bg-info rounded-pill">CSS</div>
+                                        <div class="badge bg-info rounded-pill">Bootstrap 5</div>
+                                    </div>
+                                    <div class="card-text text-secondary">
+                                        A Make My Trip website build utilizing PHP, HTML, CSS, and Bootstrap 5.
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-transparent mb-3">
+                                    <span class="btn btn-outline-secondary btn-sm text-uppercase">
+                                            code Source Code
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mx-auto mb-5">
+                            <div class="card h-100 shadow border-0 bg-light">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title mb-2 text-dark">Meal Mate Application</h5>
+                                    <div class="mb-2">
+                                        <div class="badge bg-info rounded-pill">C#</div>
+                                        <div class="badge bg-info rounded-pill">.NET</div>
+                                        <div class="badge bg-info rounded-pill">MAUI</div>
+                                    </div>
+                                    <div class="card-text text-secondary">
+                                        A Application build utilizing C# .NET MAUI.
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-transparent mb-3">
+                                    <span class="btn btn-outline-secondary btn-sm text-uppercase">
+                                        code Source Code
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </section>
+            <!-- Projects End -->
+
+             <!--Contact Content Start Here-->
+             <section id="contact" class="bg-info-subtle py-5">
+                <div class="container py-5 text-center">
+                    <div class="row justify-content-center">
+                        <h2 class="fw-bold mb-4">Contact</h2>
+                        <p class="lead text-muted mb-4">
+                            Would you like to get in touch with me?
+                        </p>
+                    </div>
+                </div>
+                <div class="container mb-5">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="firstName" class="form-label fw-bold">First Name</label>
+                            <Input type="text" class="form-control" id="firstName" placeholder="John" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lastName" class="form-label fw-bold">Last Name</label>
+                            <Input type="text" class="form-control" id="lastName" placeholder="Smith" required>
+                        </div>
+                        <div class="col-md-8">
+                            <label for="emailAddress" class="form-label fw-bold">E-mail Address</label>
+                            <Input type="email" class="form-control" id="emailAddress" placeholder="john.smith@gmail.com" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="phoneNumber" class="form-label fw-bold">Phone Number (Optional)</label>
+                            <Input type="text" class="form-control" id="phoneNumber" placeholder="+1 (999) 999-9999">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="message" class="form-label fw-bold">Message</label>
+                            <textarea class="form-control" id="message" placeholder="Comments, or questions?" required></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <a class="btn btn-primary text-uppercase fw-bold"
+                            href="/"
+                            target="_blank">
+                            Send Message
+                        </a>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <!--Contact Content End Here -->
+
+            <!-- Footer -->
+            <footer class="text-center text-light bg-dark py-4">
+                <div class="container px-5 mb-2">Copyright &copy; 2024 Binal Patel</div>
+            </footer>
+             <!-- Footer End -->
+              <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
